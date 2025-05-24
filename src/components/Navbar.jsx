@@ -41,7 +41,7 @@ const Navbar = () => {
             </Typography.Title>
             {/* <Button className='menu-control-container'></Button> */}
         </div>
-       <Menu theme='dark' defaultSelectedKeys={['home']} items={menuItem}/>
+       <Menu theme='dark'  items={menuItem}/>
        
     
        
