@@ -2,11 +2,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const cryptoApiHeaders = {
-  "x-rapidapi-key": "",
-  "x-rapidapi-host": "",
+   'x-rapidapi-key': '88cfe9a0a7msh6f7f988b15eac19p1c3442jsn31bc01899172',
+    'x-rapidapi-host': 'coinranking1.p.rapidapi.com'
 };
 ///fahad account crypto market prices
-const baseUrl = "https://crypto-market-prices.p.rapidapi.com";
+const baseUrl = "https://coinranking1.p.rapidapi.com";
 
 // const createRequest = (url) => ({ url, headers: cryptoApiHeaders }); // Changed 'header' to 'headers' for fetchBaseQuery
 
@@ -22,7 +22,7 @@ export const cryptoApi = createApi({
     }, }),
   endpoints: (builder) => ({
     getCryptos: builder.query({
-      query: () => "/exchanges",
+      query: (count) => `/coins?limit=${count}`,
     }),
   }),
 });
