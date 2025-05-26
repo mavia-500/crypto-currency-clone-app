@@ -6,7 +6,8 @@ import { useGetCryptosQuery } from '../services/cryptoApi.js'
 import {CrptoCurrencies,News} from '../components'
 const Home = () => {
     const {Title}=Typography;
-const {data,isFetching,error}=useGetCryptosQuery(10);
+  const {data,isFetching,error}=useGetCryptosQuery(10);
+
  if (isFetching) return 'Loading...';
   if (error) return `Error: ${error.message}`
 const globlaStats=data?.data?.stats

@@ -11,6 +11,7 @@ import {
 import "./app.css";
 import { Routes, Route, Link } from "react-router-dom";
 const App = () => {
+ 
   return (
     <div className="app">
       <div className="navbar">
